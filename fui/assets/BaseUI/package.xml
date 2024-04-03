@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="yaux2xpo">
+  <resources>
+    <image id="ru1k1" name="comp_172_65.png" path="/common/res/"/>
+    <component id="ru1k2" name="Button1.xml" path="/common/btn/" exported="true"/>
+    <image id="ru1k5" name="comp_58_62.png" path="/common/res/"/>
+    <image id="ru1k6" name="comp_120_164_1.png" path="/common/res/" scale="9grid" scale9grid="51,74,17,16"/>
+    <image id="ru1k7" name="comp_696_152.png" path="/common/res/"/>
+    <image id="ta2r9" name="comp_30_100.png" path="/common/res/" scale="9grid" scale9grid="7,25,14,50"/>
+    <image id="ta2ra" name="comp_60_60_4.png" path="/common/res/" scale="9grid" scale9grid="15,15,30,30"/>
+    <image id="ta2rh" name="comp_142_160_2.png" path="/common/res/" scale="9grid" scale9grid="26,59,91,76"/>
+    <component id="ta2ri" name="Button2.xml" path="/common/btn/"/>
+    <image id="ta2rk" name="comp_120_164_6.png" path="/common/res/" scale="9grid" scale9grid="13,23,90,123"/>
+    <image id="ta2rn" name="comp_66_61.png" path="/common/res/"/>
+    <image id="fjkiq" name="bg.jpg" path="/common/res/"/>
+    <image id="fjkir" name="mailbox_frame.jpg" path="/common/res/" scale="9grid" scale9grid="35,34,438,502"/>
+    <image id="fjkiu" name="herodetail_arrow_righ.png" path="/common/res/"/>
+    <image id="z43k1n" name="tips_bg.png" path="/common/res/" scale="9grid" scale9grid="70,61,86,23"/>
+    <image id="tb7e1t" name="handbook_left_arro.png" path="/common/res/"/>
+    <image id="tb7e1x" name="line.png" path="/common/res/"/>
+    <image id="tb7e22" name="herodetail_arrow_lef.png" path="/common/res/"/>
+    <image id="tb7e23" name="hourglas.png" path="/common/res/"/>
+    <component id="fimv29" name="TipsCom.xml" path="/common/" exported="true"/>
+    <image id="fimv2a" name="dy_bj10.png" path="/common/res/"/>
+    <font id="h89h37" name="NumberFont1.fnt" path="/common/" exported="true"/>
+    <image id="h89h3i" name="0.png" path="/common/res/number/number1/"/>
+    <image id="h89h3j" name="1.png" path="/common/res/number/number1/"/>
+    <image id="h89h3k" name="2.png" path="/common/res/number/number1/"/>
+    <image id="h89h3l" name="3.png" path="/common/res/number/number1/"/>
+    <image id="h89h3m" name="4.png" path="/common/res/number/number1/"/>
+    <image id="h89h3n" name="5.png" path="/common/res/number/number1/"/>
+    <image id="h89h3o" name="6.png" path="/common/res/number/number1/"/>
+    <image id="h89h3p" name="7.png" path="/common/res/number/number1/"/>
+    <image id="h89h3q" name="8.png" path="/common/res/number/number1/"/>
+    <image id="h89h3r" name="9.png" path="/common/res/number/number1/"/>
+    <image id="h89h3s" name="x.png" path="/common/res/number/number1/"/>
+    <image id="h89h3t" name="0.png" path="/common/res/number/number2/"/>
+    <image id="h89h3u" name="1.png" path="/common/res/number/number2/"/>
+    <image id="h89h3v" name="2.png" path="/common/res/number/number2/"/>
+    <image id="h89h3w" name="3.png" path="/common/res/number/number2/"/>
+    <image id="h89h3x" name="4.png" path="/common/res/number/number2/"/>
+    <image id="h89h3y" name="5.png" path="/common/res/number/number2/"/>
+    <image id="h89h3z" name="6.png" path="/common/res/number/number2/"/>
+    <image id="h89h40" name="7.png" path="/common/res/number/number2/"/>
+    <image id="h89h41" name="8.png" path="/common/res/number/number2/"/>
+    <image id="h89h42" name="9.png" path="/common/res/number/number2/"/>
+    <font id="h89h43" name="NumberFont2.fnt" path="/common/" exported="true"/>
+    <component id="bmrc5l" name="ScrollText.xml" path="/common/" exported="true"/>
+    <component id="wpcm5n" name="FishCom.xml" path="/fish/" exported="true"/>
+    <component id="ols25o" name="DisplayBar.xml" path="/fish/" exported="true"/>
+    <component id="ols25p" name="Fish.xml" path="/fish/"/>
+    <image id="ols25r" name="fish.png" path="/fish/res/"/>
+    <component id="ols25s" name="FishProgressBar.xml" path="/fish/"/>
+    <image id="mzv55t" name="elitetoggle-.png" path="/common/res/"/>
+    <image id="mzv55u" name="elitetoggle-n.png" path="/common/res/"/>
+    <component id="mzv55v" name="Button3.xml" path="/common/btn/"/>
+  </resources>
+  <publish name="BaseUI" genCode="true"/>
+</packageDescription>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" overflow="hidden" bgColor="#333333">
+  <displayList>
+    <graph id="n5_ols2" name="bg" xy="0,0" size="750,1334" type="rect" lineSize="3" fillColor="#ff999933">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <component id="n4_ols2" name="displayBar" src="ols25o" fileName="fish/DisplayBar.xml" xy="355,427"/>
+    <component id="n7_mzv5" name="startBtn" src="mzv55v" fileName="common/btn/Button3.xml" xy="310,1076"/>
+    <text id="n8_mzv5" name="timeDesc" xy="376,212" pivot="0.5,0.5" anchor="true" size="178,39" visible="false" font="Arial" fontSize="28" color="#663333" vAlign="middle" autoSize="none" bold="true" text="用时:">
+      <relation target="" sidePair="width-width,height-height,center-center,middle-middle"/>
+    </text>
+    <text id="n9_mzv5" name="tips" xy="139,667" pivot="0.5,0.5" anchor="true" size="252,150" visible="false" font="Arial" fontSize="22" color="#663333" vAlign="middle" autoSize="none" bold="true" text="点击给绿块施加向上的力,&#xA;当右侧进度条满时将钓鱼成功">
+      <relation target="" sidePair="width-width,height-height,center-center,middle-middle"/>
+    </text>
+  </displayList>
+</component>

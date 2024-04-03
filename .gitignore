@@ -1,0 +1,7 @@
+package-lock.json
+node_modules/
+logs/
+dist/
+/client/bin-debug
+/client/bin-release
+

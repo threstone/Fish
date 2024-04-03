@@ -44,6 +44,7 @@
 		"bin-debug/view/SettingView.js",
 		"bin-debug/core/EventListenerData.js",
 		"bin-debug/view/fish/FishBehavior.js",
+		"bin-debug/view/fish/FishDisplayBar.js",
 		"bin-debug/view/fish/FishView.js"
 	]
 }

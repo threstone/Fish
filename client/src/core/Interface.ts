@@ -58,4 +58,5 @@ interface Fish {
     timeList: number[];
     season: number;
     area: number;
+    exp: number;
 }

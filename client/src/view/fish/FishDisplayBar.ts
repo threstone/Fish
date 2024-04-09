@@ -1,5 +1,5 @@
 const G = 9.8;
-const UpSpeed = -30;
+const UpSpeed = -15;
 /** 撞击系数 */
 const ImpactCoefficient = 0.4;
 /** 速度上限 */
@@ -8,6 +8,8 @@ const SpeedLimit = 100;
 const FishSuccessTime = 6;
 /** 初始进度条百分比(秒) */
 const StartProgress = 20;
+/** 鱼缓冲像素值 */
+const BufferPx = 10;
 class FishDisplayBar {
 
     /** 当前速度 */
@@ -70,7 +72,7 @@ class FishDisplayBar {
         const greenHeight = FishModel.ins().getGreenHeight();
         // 最大Y轴值
         this._maxYLimit = this._displayBar.height - greenHeight;
-        
+
         // 设置绿块高度
         this._displayBar.green.height = greenHeight;
         this._displayBar.progressBar.visible = true;
@@ -102,7 +104,7 @@ class FishDisplayBar {
     private checkFish() {
         const green = this._displayBar.green;
         const fish = this._displayBar.fish;
-        if (fish.y >= green.y && fish.y + fish.height <= green.y + green.height) {
+        if ((fish.y + BufferPx) >= green.y && (fish.y + fish.height - BufferPx) <= (green.y + green.height)) {
             green.alpha = 1;
             this._displayBar.progressBar.value += this._progressChange;
         } else {
@@ -129,8 +131,6 @@ class FishDisplayBar {
     }
 
     private greenUpdate() {
-        // console.log(this._curSpeed);
-
         if (this._isUp) {
             this._curSpeed += this._upOfFrame;
         }

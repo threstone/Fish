@@ -35,10 +35,10 @@ class FishView extends BaseView<BaseUI.UIFishCom> {
         this.removeObserve('GameBeat', this.onUpdate);
 
         const isWin = this.view.displayBar.progressBar.value >= 0;
+        FishModel.ins().endFish(this._curFishConfig, isWin, this._fishDisplayerBar.isPerfect);
         TipsView.ins().open(`${isWin === true ?
             `${this._fishDisplayerBar.isPerfect ? `太棒了！完美钓上了${this._curFishConfig.name}钓鱼！` : `成功钓到了${this._curFishConfig.name}(${this.getUseTime()}秒)~`}`
             : '再接再厉'}`);
-        FishModel.ins().addExp(this._curFishConfig.exp * (this._fishDisplayerBar.isPerfect ? 2.4 : 1));
     }
 
     private getUseTime() {

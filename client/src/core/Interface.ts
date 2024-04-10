@@ -60,3 +60,9 @@ interface Fish {
     area: number;
     exp: number;
 }
+
+interface FishLevel {
+    level: number;
+    height: number;
+    exp: number;
+}

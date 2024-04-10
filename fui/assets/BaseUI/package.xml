@@ -54,6 +54,9 @@
     <image id="mzv55t" name="elitetoggle-.png" path="/common/res/"/>
     <image id="mzv55u" name="elitetoggle-n.png" path="/common/res/"/>
     <component id="mzv55v" name="Button3.xml" path="/common/btn/"/>
+    <image id="mzv55y" name="f.png" path="/fish/res/"/>
+    <image id="mzv55z" name="f1.png" path="/fish/res/"/>
+    <image id="mzv560" name="bg.png" path="/fish/res/"/>
   </resources>
   <publish name="BaseUI" genCode="true"/>
 </packageDescription>

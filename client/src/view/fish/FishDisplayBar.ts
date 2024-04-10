@@ -1,5 +1,5 @@
 const G = 9.8;
-const UpSpeed = -15;
+const UpSpeed = -20;
 /** 撞击系数 */
 const ImpactCoefficient = 0.4;
 /** 速度上限 */
@@ -43,14 +43,6 @@ class FishDisplayBar {
         this._upOfFrame = UpSpeed / egret.ticker.$frameRate;
         this._progressChange = 100 / (egret.ticker.$frameRate * FishSuccessTime);
         this._fishBehavior = new FishBehavior(displayBar.height, displayBar.fish);
-
-        // 组件初始化
-        const lineSize: number = (displayBar.greenBg as any)._lineSize;
-        displayBar.height = 480;
-        displayBar.greenBg.width = displayBar.width + lineSize * 2
-        displayBar.greenBg.height = displayBar.height + lineSize * 2
-        displayBar.greenBg.x = -lineSize;
-        displayBar.greenBg.y = -lineSize;
     }
 
     startUp() {
@@ -77,7 +69,7 @@ class FishDisplayBar {
         this._displayBar.green.height = greenHeight;
         this._displayBar.progressBar.visible = true;
         this._displayBar.fish.visible = true;
-        this._displayBar.progressBar.value = StartProgress;
+        this._displayBar.progressBar.value = StartProgress + FishModel.ins().getFishLineProgressAdd();
         this._displayBar.green.visible = true;
         this._displayBar.green.y = this._maxYLimit;
 
@@ -86,12 +78,17 @@ class FishDisplayBar {
 
     /** 返回是否继续 */
     update() {
+        this._displayBar.f.skewX += 10;
+        this._displayBar.f.skewY += 10;
         this.greenUpdate();
         this.fishUpdate();
         return this.checkFish();
     }
 
     end() {
+        this._displayBar.f.skewX += 0;
+        this._displayBar.f.skewY += 0;
+
         this._isUp = false;
         this._displayBar.progressBar.visible = false;
         this._displayBar.green.y = this._maxYLimit;
